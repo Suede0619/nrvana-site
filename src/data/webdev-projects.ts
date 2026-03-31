@@ -50,6 +50,7 @@ export const webdevProjects: Project[] = [
       "/images/projects/serge/serge3.jpg",
       "/images/projects/serge/0003_Screen-Shot-2016-06-28-at-4.08.08-PM.png.png",
       "/images/projects/serge/serge1.jpg",
+      "/images/projects/serge/4-Serge-consumer_account_mylogos_expand.png",
       "/images/projects/serge/0002_Screen-Shot-2016-06-28-at-4.08.01-PM.png.png",
       "/images/projects/serge/serge2.jpg",
       "/images/projects/serge/3-Serge_SDK_Create1.png",
