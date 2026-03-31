@@ -10,11 +10,7 @@ export const metadata = {
 export default function WordPressPage() {
   return (
     <>
-      <PageHero
-        tagline1="elysian spaceships"
-        tagline2="genuine wordpress"
-        backgroundImage="/images/sliders/farm/0036_sky.png"
-      />
+      <PageHero headerImage="/images/headers/wordpress.jpg" />
       <PortfolioGrid projects={wordpressProjects} />
     </>
   );

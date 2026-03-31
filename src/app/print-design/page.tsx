@@ -10,11 +10,7 @@ export const metadata = {
 export default function PrintDesignPage() {
   return (
     <>
-      <PageHero
-        tagline1="graphic design"
-        tagline2="cheap offset printing"
-        backgroundImage="/images/sliders/summer/back1-2.png"
-      />
+      <PageHero headerImage="/images/headers/print-design.jpg" />
       <PortfolioGrid projects={printProjects} />
     </>
   );

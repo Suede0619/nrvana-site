@@ -10,11 +10,7 @@ export const metadata = {
 export default function LogosBrandsPage() {
   return (
     <>
-      <PageHero
-        tagline1="make craters"
-        tagline2="fresh logos"
-        backgroundImage="/images/sliders/winter/0033_Vector-Smart-Object.png"
-      />
+      <PageHero headerImage="/images/headers/logos-brands.jpg" />
       <PortfolioGrid projects={logosProjects} />
     </>
   );

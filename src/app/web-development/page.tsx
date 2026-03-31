@@ -10,11 +10,7 @@ export const metadata = {
 export default function WebDevelopmentPage() {
   return (
     <>
-      <PageHero
-        tagline1="bootstrap baby"
-        tagline2="hand coded websites"
-        backgroundImage="/images/sliders/forest/0041__Path_-_Path_-_Path_-_Path_-_Path_-_Path_-_Path_-_Path_-_Path_-_Path_-_Path_-_Path_-_Path_.png"
-      />
+      <PageHero headerImage="/images/headers/webdev.jpg" />
       <PortfolioGrid projects={webdevProjects} />
     </>
   );
