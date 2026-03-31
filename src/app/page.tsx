@@ -1,35 +1,4 @@
-import Link from "next/link";
 import Image from "next/image";
-
-const portfolioSections = [
-  {
-    title: "WordPress",
-    href: "/wordpress",
-    description: "Custom WordPress builds for startups, law firms, health practices, and e-commerce.",
-  },
-  {
-    title: "Web Development",
-    href: "/web-development",
-    description: "Hand-coded websites, web applications, and mobile-first responsive design.",
-  },
-  {
-    title: "Logos & Brands",
-    href: "/logos-brands",
-    description: "Corporate identity, logo design, and brand development across industries.",
-  },
-  {
-    title: "Print Design",
-    href: "/print-design",
-    description: "Business cards, brochures, line cards, recipe books, and trade show materials.",
-  },
-];
-
-const clientLogos = [
-  "1.png", "4-3.png", "10-1.png", "11.png", "12-1.png", "13-1.png",
-  "14.png", "15.png", "16.png", "17.png", "18.png", "19.png",
-  "20.png", "21.png", "22.png", "23.png", "24.png", "25.png",
-  "26.png", "27.png", "28.png", "29.png", "30.png", "31.png",
-];
 
 export default function Home() {
   return (
@@ -76,49 +45,6 @@ export default function Home() {
                 stuart.paul@nrvana.com
               </a>
             </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Client Logos */}
-      <section className="bg-white py-16 overflow-hidden">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex flex-wrap items-center justify-center gap-8 opacity-60">
-            {clientLogos.map((logo) => (
-              <Image
-                key={logo}
-                src={`/images/client-logos/${logo}`}
-                alt="Client logo"
-                width={80}
-                height={60}
-                className="h-12 w-auto grayscale hover:grayscale-0 transition-all duration-300"
-              />
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Portfolio Sections */}
-      <section className="bg-surface py-20">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            {portfolioSections.map((section) => (
-              <Link
-                key={section.href}
-                href={section.href}
-                className="group block bg-white rounded-lg p-8 border border-border hover-lift"
-              >
-                <h2 className="text-heading text-2xl font-light tracking-wider mb-3 group-hover:text-primary transition-colors duration-200">
-                  {section.title}
-                </h2>
-                <p className="text-muted text-sm leading-relaxed">
-                  {section.description}
-                </p>
-                <span className="inline-block mt-4 text-primary text-sm font-bold tracking-wider">
-                  View projects &rarr;
-                </span>
-              </Link>
-            ))}
           </div>
         </div>
       </section>
