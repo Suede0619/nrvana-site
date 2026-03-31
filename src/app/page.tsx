@@ -14,7 +14,7 @@ export default function Home() {
         />
         <div className="absolute inset-0 flex items-center justify-center">
           <Image
-            src="/images/logos/logoWhite.png"
+            src="/images/logos/nrvana-spring.svg"
             alt="NRVANA Digital"
             width={900}
             height={234}
