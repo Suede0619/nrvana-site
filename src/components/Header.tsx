@@ -14,7 +14,7 @@ const navItems = [
 
 function MailIcon() {
   return (
-    <svg viewBox="0 0 900 700" fill="currentColor" className="w-4 h-4">
+    <svg viewBox="0 0 900 700" fill="currentColor" className="w-4 h-4" style={{ transform: "scaleY(-1)" }}>
       <path d="M30 586q-32 18-28 40 2 14 26 14l846 0q38 0 20-32-8-14-24-22-14-6-192-102t-182-98q-16-10-46-10-28 0-46 10-4 2-182 98t-192 102z m850-100q20 10 20-10l0-368q0-16-17-32t-33-16l-800 0q-16 0-33 16t-17 32l0 368q0 20 20 10l384-200q18-10 46-10t46 10z" />
     </svg>
   );
@@ -22,7 +22,7 @@ function MailIcon() {
 
 function LinkedInIcon() {
   return (
-    <svg viewBox="0 0 900 900" fill="currentColor" className="w-4 h-4">
+    <svg viewBox="0 0 900 900" fill="currentColor" className="w-4 h-4" style={{ transform: "scaleY(-1)" }}>
       <path d="M204 698q0-40-29-68t-75-28q-44 0-72 28t-28 68q0 42 28 69t74 27 73-27 29-69z m-198-790l0 618 192 0 0-618-192 0z m306 420q0 86-4 198l166 0 10-86 4 0q60 100 190 100 100 0 161-67t61-199l0-366-192 0 0 342q0 134-98 134-70 0-98-72-6-12-6-48l0-356-194 0 0 420z" />
     </svg>
   );
