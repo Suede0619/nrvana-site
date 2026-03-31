@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect, useCallback, useRef } from "react";
+import { useState, useEffect, useRef } from "react";
 import Image from "next/image";
 
 interface Project {
@@ -17,20 +17,14 @@ export default function ProjectCard({ project }: { project: Project }) {
   const cardRef = useRef<HTMLDivElement>(null);
   const imageCount = project.images.length;
 
-  const nextSlide = useCallback(() => {
+  const nextSlide = () => {
     setCurrentSlide((prev) => (prev + 1) % imageCount);
-  }, [imageCount]);
+  };
 
   const prevSlide = () => {
     setCurrentSlide((prev) => (prev - 1 + imageCount) % imageCount);
   };
 
-  // Auto-advance slideshow
-  useEffect(() => {
-    if (imageCount <= 1) return;
-    const timer = setInterval(nextSlide, 4000);
-    return () => clearInterval(timer);
-  }, [imageCount, nextSlide]);
 
   // Intersection observer for scroll animation
   useEffect(() => {
