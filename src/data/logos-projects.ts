@@ -35,7 +35,7 @@ export const logosProjects: Project[] = [
   {
     title: "Food Industry Brand",
     client: "North Tahoe Catering",
-    skills: "Illustrator, Typography",
+    skills: "Illustator, Typography",
     description:
       "Used vegetable drawings to create a series of logos for this premier Truckee, CA caterer. The clean sophisticated design evokes farm to table ethic.",
     images: [
@@ -70,9 +70,10 @@ export const logosProjects: Project[] = [
   },
   {
     title: "Food Shelter Yoyo",
-    skills: "Logo Design, Branding",
+    client: "Food Shelter Yoyo",
+    skills: "Logo Design, Illustrator",
     description:
-      "Creative branding and logo design work for a food-focused community initiative.",
+      "Logo versions for this not-for-profit working in the developing world. Work performed gratis.",
     images: [
       "/images/projects/food-shelter/0000_logo1.png.jpg",
       "/images/projects/food-shelter/0001_logo2.png.jpg",
@@ -81,9 +82,9 @@ export const logosProjects: Project[] = [
   {
     title: "Fashion Brand",
     client: "Untapped",
-    skills: "Branding, Fashion Design",
+    skills: "Logo Design, Typography",
     description:
-      "Developed brand identity for this fashion label with a focus on modern aesthetics and market positioning.",
+      "Created the brand for this west coast fashion house.",
     images: [
       "/images/projects/untapped/untapped.jpg",
       "/images/projects/untapped/untapped1.jpg",
@@ -92,9 +93,9 @@ export const logosProjects: Project[] = [
   {
     title: "Euroglas",
     client: "Euroglas",
-    skills: "Logo Design, Corporate Identity",
+    skills: "Typography, HTML/CSS",
     description:
-      "Corporate identity and logo design for Euroglas, delivering a clean European-inspired brand mark.",
+      "Logo type treatment and a basic website that presents the work of a master glass craftsman from Colorado. Kevin says the site is remarkably useful when he is selling to new clients\u2014it presents various techniques and options.",
     images: [
       "/images/projects/euroglas/euro.jpg",
       "/images/projects/euroglas/euro1.jpg",

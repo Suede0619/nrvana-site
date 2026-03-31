@@ -107,15 +107,17 @@ export default function ProjectCard({ project }: { project: Project }) {
 
       {/* Content */}
       <div className="p-5">
-        <h3 className="text-heading text-lg font-bold mb-1">{project.title}</h3>
+        <h3 className="text-heading text-lg font-bold mb-3">{project.title}</h3>
+        <p className="text-muted text-sm mb-1">
+          <strong className="text-heading">Skills Involved: </strong>
+          {project.skills}
+        </p>
         {project.client && (
-          <p className="text-muted text-xs mb-2 uppercase tracking-wider">
+          <p className="text-muted text-sm mb-3">
+            <strong className="text-heading">Client: </strong>
             {project.client}
           </p>
         )}
-        <p className="text-primary text-xs font-bold mb-3 tracking-wider">
-          {project.skills}
-        </p>
         <p className="text-muted text-sm leading-relaxed">
           {project.description}
         </p>

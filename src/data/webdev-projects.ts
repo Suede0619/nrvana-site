@@ -3,10 +3,10 @@ import { Project } from "./wordpress-projects";
 export const webdevProjects: Project[] = [
   {
     title: "Savoya / Groundwork",
-    client: "Savoya",
-    skills: "UI/UX, Mobile Design, Sketch, Pug/Stylus, WordPress Dev",
+    client: "Savoya/Groundwork",
+    skills: "UI/UX, Mobile Design, Sketch, Pug/Stylus, Wordpress Dev",
     description:
-      "Designed reservation and in-progress screens for this secure executive ground transportation company. Developed responsive styling, mobile app design, and marketing site.",
+      "Secure executive ground transportation. Design reservation and in-progress screens UX. Write responsive stylus and pug in the web application. Mobile app design. Wordpress development for marketing website.",
     images: [
       "/images/projects/savoya/gw4.png",
       "/images/projects/savoya/gw2.png",
@@ -25,7 +25,7 @@ export const webdevProjects: Project[] = [
     client: "FilmFunds",
     skills: "HTML5/CSS3, jQuery",
     description:
-      "Built the frontend for a startup social platform for independent filmmakers. Created graphics and HTML/CSS page shells while coordinating with backend developers.",
+      "This startup was a social website for the independent film industry. Created graphics and shelled pages in html/css. Worked with a back-end development team to maintain the website.",
     images: [
       "/images/projects/filmfunds/0001_01_landing.jpg.png",
       "/images/projects/filmfunds/0000_01_landing.jpg-copy.png",
@@ -42,15 +42,14 @@ export const webdevProjects: Project[] = [
   {
     title: "Serge Media",
     client: "Serge Media",
-    skills: "UI/UX, Web Application, SDK Design",
+    skills: "HTML5/CSS3, jQuery",
     description:
-      "Designed and developed complex web application interfaces and SDK tooling for Serge Media's platform.",
+      "This startup business developed a platform for smartphone camera search. Wrote HTML5/CSS3 and jQuery for several websites in an MVP framework using Git. Worked on a development team.",
     images: [
       "/images/projects/serge/0000_Screen-Shot-2016-06-28-at-4.07.40-PM.png.png",
       "/images/projects/serge/serge3.jpg",
       "/images/projects/serge/0003_Screen-Shot-2016-06-28-at-4.08.08-PM.png.png",
       "/images/projects/serge/serge1.jpg",
-      "/images/projects/serge/4-Serge-consumer_account_mylogos_expand.png",
       "/images/projects/serge/0002_Screen-Shot-2016-06-28-at-4.08.01-PM.png.png",
       "/images/projects/serge/serge2.jpg",
       "/images/projects/serge/3-Serge_SDK_Create1.png",
@@ -65,9 +64,9 @@ export const webdevProjects: Project[] = [
   {
     title: "Streamline Ventures",
     client: "Streamline Ventures",
-    skills: "Web Development, Responsive Design",
+    skills: "HTML5/CSS3, jQuery",
     description:
-      "Developed a clean, professional web presence for this venture capital firm with a focus on clear communication and credibility.",
+      "Wore many hats in the creation and development of a half dozen start-up businesses in the web, mobile and augmented reality space. Designed usable, intentional interfaces, wrote code, and coordinated a team of developers.",
     images: [
       "/images/projects/streamline/streamline.png",
       "/images/projects/streamline/0000__0000_v3.jpg.jpg.jpg",
@@ -78,9 +77,10 @@ export const webdevProjects: Project[] = [
   },
   {
     title: "Asset Allocation Tool",
-    skills: "JavaScript, Data Visualization, UI/UX",
+    client: "Vitreous Partners",
+    skills: "UI, Bootstrap, jQuery",
     description:
-      "Built a specialized financial application for asset allocation analysis with interactive data visualization and responsive design.",
+      "Worked with a Java development team to build the Clear Choice Asset Allocation tool. Questions animate across the screen, resulting data delivers a pie-chart result, email address is accepted, pdf pie chart is delivered. Performed all front end development in Bootstrap and jQuery.",
     images: [
       "/images/projects/asset-allocation/0000_Screen-Shot-2016-06-30-at-12.37.45-PM.png.png",
       "/images/projects/asset-allocation/0001_Screen-Shot-2016-06-30-at-12.37.59-PM.png.png",
@@ -89,9 +89,10 @@ export const webdevProjects: Project[] = [
   },
   {
     title: "Bootstrap Website",
-    skills: "Bootstrap, HTML5/CSS3, Responsive Design",
+    client: "Glider Gloves",
+    skills: "Bootstrap, PhotoShop",
     description:
-      "Developed a fully responsive website using the Bootstrap framework, demonstrating clean mobile-first design principles.",
+      "Built a responsive website using Twitter Bootstrap\u2014used the Ingress augmented-reality game brand and imagery to generate a world of intrigue, and create a buzz to sell these custom touchscreen friendly gloves.",
     images: [
       "/images/projects/bootstrap/0000_Screen-Shot-2015-05-15-at-12.02.41-AM.png.jpg",
       "/images/projects/bootstrap/0001_Screen-Shot-2015-05-15-at-12.02.53-AM.png.jpg",
@@ -102,10 +103,10 @@ export const webdevProjects: Project[] = [
   },
   {
     title: "Brandon Del Campo",
-    client: "Brandon Del Campo",
-    skills: "Web Development, Portfolio Design",
+    client: "Brandon DelCampo",
+    skills: "Photoshop, HTML/CSS, Typography",
     description:
-      "Created a personal portfolio website with a focus on showcasing professional work and personal brand.",
+      "A high-tech and racy design create a riveting brand for the coaching services for elite triathletes. Created design elements and built an html website. Blog feed is branded with consistent colors and header image\u2014a tool for engaging the audience with fresh content and expertise in the sport.",
     images: [
       "/images/projects/brandon/brandon.jpg",
       "/images/projects/brandon/brandon1.jpg",
@@ -114,10 +115,11 @@ export const webdevProjects: Project[] = [
     ],
   },
   {
-    title: "Men's Health Industry",
-    skills: "Web Development, Health Industry Design",
+    title: "Men\u2019s Health Industry",
+    client: "Men4men4life",
+    skills: "Logo Design, Web Design, Indesign",
     description:
-      "Developed a web presence for the men's health sector with a focus on trust, accessibility, and clear information architecture.",
+      "Logo design and an html website creates a world for health education messages.",
     images: [
       "/images/projects/mens-health/0004_Hotspotting_homepage_v03_sponsored.jpg.png",
       "/images/projects/mens-health/0002_Aluminaid_Home.jpg.png",
