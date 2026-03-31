@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect, useCallback } from "react";
+import { useState, useEffect, useCallback, useRef } from "react";
 import Image from "next/image";
 
 interface Project {
@@ -13,6 +13,8 @@ interface Project {
 
 export default function ProjectCard({ project }: { project: Project }) {
   const [currentSlide, setCurrentSlide] = useState(0);
+  const [isVisible, setIsVisible] = useState(false);
+  const cardRef = useRef<HTMLDivElement>(null);
   const imageCount = project.images.length;
 
   const nextSlide = useCallback(() => {
@@ -23,19 +25,40 @@ export default function ProjectCard({ project }: { project: Project }) {
     setCurrentSlide((prev) => (prev - 1 + imageCount) % imageCount);
   };
 
+  // Auto-advance slideshow
   useEffect(() => {
     if (imageCount <= 1) return;
     const timer = setInterval(nextSlide, 4000);
     return () => clearInterval(timer);
   }, [imageCount, nextSlide]);
 
+  // Intersection observer for scroll animation
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setIsVisible(true);
+          observer.disconnect();
+        }
+      },
+      { threshold: 0.1 }
+    );
+    if (cardRef.current) observer.observe(cardRef.current);
+    return () => observer.disconnect();
+  }, []);
+
   return (
-    <div className="bg-surface rounded-lg overflow-hidden border border-white/5 hover:border-white/10 transition-colors">
+    <div
+      ref={cardRef}
+      className={`bg-white rounded-lg overflow-hidden border border-border hover-lift ${
+        isVisible ? "animate-fade-in-up" : "opacity-0"
+      }`}
+    >
       {/* Image Slideshow */}
-      <div className="relative aspect-[16/10] bg-black">
+      <div className="relative aspect-[16/10] bg-surface overflow-hidden">
         {imageCount === 0 ? (
-          <div className="absolute inset-0 bg-gradient-to-br from-zinc-800 to-zinc-900 flex items-center justify-center">
-            <span className="text-white/20 text-4xl font-light tracking-widest uppercase">
+          <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-highlight/20 flex items-center justify-center">
+            <span className="text-primary/30 text-2xl font-light tracking-widest uppercase text-center px-4">
               {project.title}
             </span>
           </div>
@@ -46,7 +69,7 @@ export default function ProjectCard({ project }: { project: Project }) {
               src={img}
               alt={`${project.title} screenshot ${i + 1}`}
               fill
-              className={`object-cover transition-opacity duration-500 ${
+              className={`object-cover slide-transition ${
                 i === currentSlide ? "opacity-100" : "opacity-0"
               }`}
               sizes="(max-width: 768px) 100vw, 50vw"
@@ -58,17 +81,17 @@ export default function ProjectCard({ project }: { project: Project }) {
           <>
             <button
               onClick={prevSlide}
-              className="absolute left-2 top-1/2 -translate-y-1/2 bg-black/50 text-white w-8 h-8 rounded-full flex items-center justify-center hover:bg-black/70 transition-colors"
+              className="absolute left-2 top-1/2 -translate-y-1/2 bg-black/40 text-white w-8 h-8 rounded-full flex items-center justify-center hover:bg-primary/80 transition-colors duration-200"
               aria-label="Previous image"
             >
-              ‹
+              &#8249;
             </button>
             <button
               onClick={nextSlide}
-              className="absolute right-2 top-1/2 -translate-y-1/2 bg-black/50 text-white w-8 h-8 rounded-full flex items-center justify-center hover:bg-black/70 transition-colors"
+              className="absolute right-2 top-1/2 -translate-y-1/2 bg-black/40 text-white w-8 h-8 rounded-full flex items-center justify-center hover:bg-primary/80 transition-colors duration-200"
               aria-label="Next image"
             >
-              ›
+              &#8250;
             </button>
 
             {/* Dots */}
@@ -77,7 +100,7 @@ export default function ProjectCard({ project }: { project: Project }) {
                 <button
                   key={i}
                   onClick={() => setCurrentSlide(i)}
-                  className={`w-2 h-2 rounded-full transition-colors ${
+                  className={`w-2 h-2 rounded-full transition-colors duration-200 ${
                     i === currentSlide ? "bg-white" : "bg-white/40"
                   }`}
                   aria-label={`Go to slide ${i + 1}`}
@@ -90,18 +113,24 @@ export default function ProjectCard({ project }: { project: Project }) {
 
       {/* Content */}
       <div className="p-5">
-        <h3 className="text-white text-lg font-bold mb-1">{project.title}</h3>
+        <h3 className="text-heading text-lg font-bold mb-1">{project.title}</h3>
         {project.client && (
           <p className="text-muted text-xs mb-2 uppercase tracking-wider">
             {project.client}
           </p>
         )}
-        <p className="text-accent text-xs font-bold mb-3 tracking-wider">
+        <p className="text-primary text-xs font-bold mb-3 tracking-wider">
           {project.skills}
         </p>
         <p className="text-muted text-sm leading-relaxed">
           {project.description}
         </p>
+        <a
+          href="mailto:stuart.paul@nrvana.com"
+          className="inline-block mt-4 bg-primary text-white px-5 py-2 rounded text-sm font-bold tracking-wider hover:bg-highlight transition-colors duration-200"
+        >
+          Contact Us
+        </a>
       </div>
     </div>
   );

@@ -5,9 +5,9 @@ export const metadata = {
 
 export default function ContactPage() {
   return (
-    <section className="pt-24 pb-20">
+    <section className="pt-24 pb-20 bg-white">
       <div className="max-w-2xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h1 className="text-white text-4xl font-light tracking-wider mb-8">
+        <h1 className="text-heading text-4xl font-light tracking-wider mb-8">
           Get in touch
         </h1>
         <div className="space-y-6">
@@ -17,7 +17,7 @@ export default function ContactPage() {
             </h2>
             <a
               href="tel:720-275-1350"
-              className="text-white text-xl hover:text-accent transition-colors"
+              className="text-primary text-xl hover:text-highlight transition-colors duration-200"
             >
               720-275-1350
             </a>
@@ -28,7 +28,7 @@ export default function ContactPage() {
             </h2>
             <a
               href="mailto:stuart.paul@nrvana.com"
-              className="text-white text-xl hover:text-accent transition-colors"
+              className="text-primary text-xl hover:text-highlight transition-colors duration-200"
             >
               stuart.paul@nrvana.com
             </a>
@@ -41,7 +41,7 @@ export default function ContactPage() {
               href="https://www.linkedin.com/in/stuartpaul"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-white text-xl hover:text-accent transition-colors"
+              className="text-primary text-xl hover:text-highlight transition-colors duration-200"
             >
               linkedin.com/in/stuartpaul
             </a>
@@ -53,15 +53,15 @@ export default function ContactPage() {
             <div className="space-y-2">
               <a
                 href="/stuart_paul_portfolio-FINAL-v2a.pdf"
-                className="block text-white hover:text-accent transition-colors"
+                className="block text-primary hover:text-highlight transition-colors duration-200"
               >
-                Digital Portfolio (PDF) ↓
+                Digital Portfolio (PDF) &darr;
               </a>
               <a
                 href="/Stuart-Paul-Resume.pdf"
-                className="block text-white hover:text-accent transition-colors"
+                className="block text-primary hover:text-highlight transition-colors duration-200"
               >
-                Resume (PDF) ↓
+                Resume (PDF) &darr;
               </a>
             </div>
           </div>

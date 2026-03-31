@@ -7,7 +7,13 @@ export const logosProjects: Project[] = [
     skills: "Marketing, Logo Design",
     description:
       "Corporate identity for this high net worth, wealth management start-up from Los Angeles. Developed the brand colors, fonts, logo and messaging.",
-    images: ["/images/projects/vitreous/vitreous1.jpg"],
+    images: [
+      "/images/projects/vitreous-brand/spec0-1.jpg",
+      "/images/projects/vitreous-brand/spec1-1.jpg",
+      "/images/projects/vitreous-brand/spec2-1.jpg",
+      "/images/projects/vitreous-brand/spec3-1.jpg",
+      "/images/projects/vitreous-brand/spec4-1.jpg",
+    ],
   },
   {
     title: "Tech Industry Brand",
@@ -15,7 +21,16 @@ export const logosProjects: Project[] = [
     skills: "Branding, Business Card Design",
     description:
       "Corporate identity for this $70 million/year west coast manufacturers rep in the security camera industry. Developed the brand, designed a new logo and produced business cards.",
-    images: ["/images/projects/cvreps/CVREPS.jpg"],
+    images: [
+      "/images/projects/cvreps-brand/0000_spec0.psd.jpg",
+      "/images/projects/cvreps-brand/0001_spec1.psd.jpg",
+      "/images/projects/cvreps-brand/0002_spec2.psd.jpg",
+      "/images/projects/cvreps-brand/0003_spec2a.psd.jpg",
+      "/images/projects/cvreps-brand/0005_Layer-1-copy.jpg",
+      "/images/projects/cvreps-brand/0004_spec4.psd.jpg",
+      "/images/projects/cvreps-brand/front.png",
+      "/images/projects/cvreps-brand/back.png",
+    ],
   },
   {
     title: "Food Industry Brand",
@@ -23,7 +38,13 @@ export const logosProjects: Project[] = [
     skills: "Illustrator, Typography",
     description:
       "Used vegetable drawings to create a series of logos for this premier Truckee, CA caterer. The clean sophisticated design evokes farm to table ethic.",
-    images: [],
+    images: [
+      "/images/projects/north-tahoe/0004_Vector-Smart-Object.png",
+      "/images/projects/north-tahoe/0003_Vector-Smart-Object.png",
+      "/images/projects/north-tahoe/0002_Vector-Smart-Object-1.png",
+      "/images/projects/north-tahoe/0001_Vector-Smart-Object-1.png",
+      "/images/projects/north-tahoe/0000_Vector-Smart-Object-1.png",
+    ],
   },
   {
     title: "Photography Brand",
@@ -31,7 +52,10 @@ export const logosProjects: Project[] = [
     skills: "Photoshop, Illustrator",
     description:
       "Original logo and updated version for this Chicago photographer working in the events, fashion and head shots space.",
-    images: [],
+    images: [
+      "/images/projects/gthomas-brand/cameraGhost.png",
+      "/images/projects/gthomas-brand/ward.png",
+    ],
   },
   {
     title: "Tech Startup Logo",
@@ -39,14 +63,20 @@ export const logosProjects: Project[] = [
     skills: "Logo Design, Typography, Illustrator",
     description:
       "Carried out a logo design with byline, and icon design process for this technology startup. Several rounds of designs led to this finished design that speaks of technology, data and linked connection.",
-    images: ["/images/projects/vdex/vdex.jpg"],
+    images: [
+      "/images/projects/vdex/6-5.png",
+      "/images/projects/vdex/5-7.png",
+    ],
   },
   {
     title: "Food Shelter Yoyo",
     skills: "Logo Design, Branding",
     description:
       "Creative branding and logo design work for a food-focused community initiative.",
-    images: [],
+    images: [
+      "/images/projects/food-shelter/0000_logo1.png.jpg",
+      "/images/projects/food-shelter/0001_logo2.png.jpg",
+    ],
   },
   {
     title: "Fashion Brand",
@@ -65,6 +95,11 @@ export const logosProjects: Project[] = [
     skills: "Logo Design, Corporate Identity",
     description:
       "Corporate identity and logo design for Euroglas, delivering a clean European-inspired brand mark.",
-    images: [],
+    images: [
+      "/images/projects/euroglas/euro.jpg",
+      "/images/projects/euroglas/euro1.jpg",
+      "/images/projects/euroglas/euro2.jpg",
+      "/images/projects/euroglas/euro3.jpg",
+    ],
   },
 ];

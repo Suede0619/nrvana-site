@@ -1,33 +1,71 @@
 @import "tailwindcss";
 
 @theme inline {
-  --color-background: #0a0a0a;
-  --color-foreground: #ededed;
-  --color-primary: #ffffff;
-  --color-muted: #888888;
-  --color-accent: #3b82f6;
-  --color-surface: #141414;
-  --color-surface-light: #1a1a1a;
+  --color-background: #ffffff;
+  --color-foreground: #777777;
+  --color-primary: #5e133e;
+  --color-highlight: #6b1a49;
+  --color-footer-bg: #4f0d34;
+  --color-socket-bg: #360924;
+  --color-surface: #f8f8f8;
+  --color-border: #e1e1e1;
+  --color-heading: #444444;
+  --color-white: #ffffff;
+  --color-muted: #777777;
+  --color-accent: #5e133e;
   --font-sans: var(--font-lato);
 }
 
 body {
   background: var(--color-background);
   color: var(--color-foreground);
-  font-family: var(--font-sans), Arial, Helvetica, sans-serif;
+  font-family: var(--font-sans), Arial, sans-serif;
 }
 
-/* Smooth scrolling */
 html {
   scroll-behavior: smooth;
 }
 
-/* Image slideshow */
-.slideshow {
-  position: relative;
-  overflow: hidden;
+/* Fade-in animation */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
-.slideshow img {
+.animate-fade-in-up {
+  animation: fadeInUp 0.6s ease-out forwards;
+}
+
+/* Staggered animation delays */
+.animate-delay-100 { animation-delay: 0.1s; }
+.animate-delay-200 { animation-delay: 0.2s; }
+.animate-delay-300 { animation-delay: 0.3s; }
+.animate-delay-400 { animation-delay: 0.4s; }
+
+/* Parallax */
+.parallax {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Slideshow transitions */
+.slide-transition {
   transition: opacity 0.5s ease-in-out;
+}
+
+/* Hover lift effect */
+.hover-lift {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.hover-lift:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
 }
