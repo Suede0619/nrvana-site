@@ -18,7 +18,7 @@ export default function Home() {
             alt="NRVANA Digital"
             width={900}
             height={234}
-            className="mx-auto h-36 md:h-48 w-auto"
+            className="mx-auto h-72 md:h-96 w-auto"
           />
         </div>
       </section>
