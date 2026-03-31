@@ -40,10 +40,10 @@ export default function Home() {
       >
         <div className="absolute inset-0 bg-primary/60" />
         <div className="relative z-10 text-center px-4 max-w-4xl">
-          <h1 className="text-white text-5xl md:text-7xl font-light tracking-wider mb-4 animate-fade-in-up">
+          <h1 className="text-white text-5xl md:text-7xl font-normal tracking-wider mb-4 animate-fade-in-up" style={{ fontFamily: "var(--font-klarissa)" }}>
             waterproof code
           </h1>
-          <p className="text-white/70 text-xl md:text-3xl font-light tracking-widest mb-8 animate-fade-in-up animate-delay-200">
+          <p className="text-white/70 text-xl md:text-3xl font-normal tracking-widest mb-8 animate-fade-in-up animate-delay-200" style={{ fontFamily: "var(--font-klarissa)" }}>
             shiny websites
           </p>
           <p className="text-white/90 text-lg md:text-xl font-light max-w-2xl mx-auto leading-relaxed animate-fade-in-up animate-delay-300">
