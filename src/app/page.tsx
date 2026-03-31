@@ -4,13 +4,12 @@ export default function Home() {
   return (
     <>
       {/* Header Image */}
-      <section className="relative w-full">
+      <section className="relative w-full min-h-screen flex flex-col">
         <Image
-          src="/images/headers/home.jpg"
+          src="/images/headers/home-water.jpg"
           alt=""
-          width={5000}
-          height={1000}
-          className="w-full h-auto"
+          fill
+          className="object-cover"
           priority
           sizes="100vw"
         />
