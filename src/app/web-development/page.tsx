@@ -1,6 +1,7 @@
-import PageHero from "@/components/PageHero";
+import LayerSlider from "@/components/LayerSlider";
 import PortfolioGrid from "@/components/PortfolioGrid";
 import { webdevProjects } from "@/data/webdev-projects";
+import { forestSlider } from "@/data/sliders";
 
 export const metadata = {
   title: "Web Development Portfolio | NRVANA Digital",
@@ -10,7 +11,7 @@ export const metadata = {
 export default function WebDevelopmentPage() {
   return (
     <>
-      <PageHero tagline1="hand coded websites" tagline2="bootstrap baby" />
+      <LayerSlider config={forestSlider} />
       <PortfolioGrid projects={webdevProjects} />
     </>
   );

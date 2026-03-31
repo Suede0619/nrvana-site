@@ -1,6 +1,7 @@
-import PageHero from "@/components/PageHero";
+import LayerSlider from "@/components/LayerSlider";
 import PortfolioGrid from "@/components/PortfolioGrid";
 import { wordpressProjects } from "@/data/wordpress-projects";
+import { farmSlider } from "@/data/sliders";
 
 export const metadata = {
   title: "WordPress Portfolio | NRVANA Digital",
@@ -10,7 +11,7 @@ export const metadata = {
 export default function WordPressPage() {
   return (
     <>
-      <PageHero tagline1="genuine wordpress" tagline2="elysian spaceships" />
+      <LayerSlider config={farmSlider} />
       <PortfolioGrid projects={wordpressProjects} />
     </>
   );

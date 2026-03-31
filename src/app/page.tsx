@@ -1,5 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
+import LayerSlider from "@/components/LayerSlider";
+import { citySlider } from "@/data/sliders";
 
 const portfolioSections = [
   {
@@ -34,23 +36,8 @@ const clientLogos = [
 export default function Home() {
   return (
     <>
-      {/* Hero */}
-      <section className="relative h-screen flex items-center justify-center overflow-hidden parallax"
-        style={{ backgroundImage: "url(/images/hero/water-back.jpg)" }}
-      >
-        <div className="absolute inset-0 bg-primary/60" />
-        <div className="relative z-10 text-center px-4 max-w-4xl">
-          <h1 className="text-white text-5xl md:text-7xl font-normal tracking-wider mb-4 animate-fade-in-up" style={{ fontFamily: "var(--font-klarissa)" }}>
-            waterproof code
-          </h1>
-          <p className="text-white/70 text-xl md:text-3xl font-normal tracking-widest mb-8 animate-fade-in-up animate-delay-200" style={{ fontFamily: "var(--font-klarissa)" }}>
-            shiny websites
-          </p>
-          <p className="text-white/90 text-lg md:text-xl font-light max-w-2xl mx-auto leading-relaxed animate-fade-in-up animate-delay-300">
-            We are—culture, design, websites and software.
-          </p>
-        </div>
-      </section>
+      {/* Hero LayerSlider */}
+      <LayerSlider config={citySlider} />
 
       {/* Client Logos */}
       <section className="bg-white py-16 overflow-hidden">

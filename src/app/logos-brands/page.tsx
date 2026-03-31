@@ -1,6 +1,7 @@
-import PageHero from "@/components/PageHero";
+import LayerSlider from "@/components/LayerSlider";
 import PortfolioGrid from "@/components/PortfolioGrid";
 import { logosProjects } from "@/data/logos-projects";
+import { winterSlider } from "@/data/sliders";
 
 export const metadata = {
   title: "Logos & Brands Portfolio | NRVANA Digital",
@@ -10,7 +11,7 @@ export const metadata = {
 export default function LogosBrandsPage() {
   return (
     <>
-      <PageHero tagline1="fresh logos" tagline2="make craters" />
+      <LayerSlider config={winterSlider} />
       <PortfolioGrid projects={logosProjects} />
     </>
   );
