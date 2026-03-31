@@ -121,12 +121,6 @@ export default function ProjectCard({ project }: { project: Project }) {
         <p className="text-muted text-sm leading-relaxed">
           {project.description}
         </p>
-        <a
-          href="mailto:stuart.paul@nrvana.com"
-          className="inline-block mt-4 bg-primary text-white px-5 py-2 rounded text-sm font-bold tracking-wider hover:bg-highlight transition-colors duration-200"
-        >
-          Contact Us
-        </a>
       </div>
     </div>
   );
