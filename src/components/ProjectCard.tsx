@@ -107,7 +107,7 @@ export default function ProjectCard({ project }: { project: Project }) {
 
       {/* Content */}
       <div className="p-5">
-        <h3 className="text-heading text-lg font-bold mb-3">{project.title}</h3>
+        <h3 className="text-heading text-2xl mb-3" style={{ fontFamily: "var(--font-klarissa)" }}>{project.title}</h3>
         <p className="text-muted text-sm mb-1">
           <strong className="text-heading">Skills Involved: </strong>
           {project.skills}
