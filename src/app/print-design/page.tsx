@@ -1,7 +1,6 @@
-import LayerSlider from "@/components/LayerSlider";
+import PageHero from "@/components/PageHero";
 import PortfolioGrid from "@/components/PortfolioGrid";
 import { printProjects } from "@/data/print-projects";
-import { summerSlider } from "@/data/sliders";
 
 export const metadata = {
   title: "Print Design Portfolio | NRVANA Digital",
@@ -11,7 +10,11 @@ export const metadata = {
 export default function PrintDesignPage() {
   return (
     <>
-      <LayerSlider config={summerSlider} />
+      <PageHero
+        tagline1="graphic design"
+        tagline2="cheap offset printing"
+        backgroundImage="/images/sliders/summer/back1-2.png"
+      />
       <PortfolioGrid projects={printProjects} />
     </>
   );

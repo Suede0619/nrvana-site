@@ -1,7 +1,6 @@
-import LayerSlider from "@/components/LayerSlider";
+import PageHero from "@/components/PageHero";
 import PortfolioGrid from "@/components/PortfolioGrid";
 import { wordpressProjects } from "@/data/wordpress-projects";
-import { farmSlider } from "@/data/sliders";
 
 export const metadata = {
   title: "WordPress Portfolio | NRVANA Digital",
@@ -11,7 +10,11 @@ export const metadata = {
 export default function WordPressPage() {
   return (
     <>
-      <LayerSlider config={farmSlider} />
+      <PageHero
+        tagline1="elysian spaceships"
+        tagline2="genuine wordpress"
+        backgroundImage="/images/sliders/farm/0036_sky.png"
+      />
       <PortfolioGrid projects={wordpressProjects} />
     </>
   );

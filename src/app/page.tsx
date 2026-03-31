@@ -1,7 +1,5 @@
 import Link from "next/link";
 import Image from "next/image";
-import LayerSlider from "@/components/LayerSlider";
-import { citySlider } from "@/data/sliders";
 
 const portfolioSections = [
   {
@@ -36,8 +34,60 @@ const clientLogos = [
 export default function Home() {
   return (
     <>
-      {/* Hero LayerSlider */}
-      <LayerSlider config={citySlider} />
+      {/* Hero */}
+      <section className="relative h-screen flex items-center justify-center overflow-hidden">
+        <Image
+          src="/images/sliders/city/water-back.jpg"
+          alt=""
+          fill
+          className="object-cover"
+          priority
+          sizes="100vw"
+        />
+        <div className="absolute inset-0 bg-primary/50" />
+        <div className="relative z-10 text-center px-4 max-w-3xl">
+          <h1
+            className="text-white text-5xl md:text-7xl tracking-wider mb-6"
+            style={{ fontFamily: "var(--font-klarissa)" }}
+          >
+            waterproof code
+          </h1>
+          <p
+            className="text-white/80 text-xl md:text-3xl tracking-widest mb-10"
+            style={{ fontFamily: "var(--font-klarissa)" }}
+          >
+            shiny websites
+          </p>
+          <Image
+            src="/images/logos/logoWhite.png"
+            alt="NRVANA Digital"
+            width={300}
+            height={78}
+            className="mx-auto mb-10 h-16 w-auto"
+          />
+          <h2 className="text-white text-2xl md:text-3xl font-light tracking-wider mb-4">
+            Let&apos;s work together
+          </h2>
+          <p className="text-white/70 text-base md:text-lg mb-8 max-w-xl mx-auto">
+            Looking for a designer and developer who can bring your vision to
+            life? Let&apos;s talk.
+          </p>
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+            <a
+              href="tel:720-275-1350"
+              className="bg-white text-primary px-8 py-3 rounded-lg font-bold tracking-wider hover:bg-white/90 transition-colors duration-200"
+            >
+              720-275-1350
+            </a>
+            <a
+              href="mailto:stuart.paul@nrvana.com"
+              className="border border-white/30 text-white px-8 py-3 rounded-lg tracking-wider hover:bg-white/10 transition-colors duration-200"
+            >
+              stuart.paul@nrvana.com
+            </a>
+          </div>
+        </div>
+      </section>
 
       {/* Client Logos */}
       <section className="bg-white py-16 overflow-hidden">
@@ -78,33 +128,6 @@ export default function Home() {
                 </span>
               </Link>
             ))}
-          </div>
-        </div>
-      </section>
-
-      {/* CTA */}
-      <section className="bg-primary py-20">
-        <div className="max-w-4xl mx-auto px-4 text-center">
-          <h2 className="text-white text-3xl font-light tracking-wider mb-6">
-            Let&apos;s work together
-          </h2>
-          <p className="text-white/70 text-lg mb-8 max-w-2xl mx-auto">
-            Looking for a designer and developer who can bring your vision to
-            life? Let&apos;s talk.
-          </p>
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-            <a
-              href="tel:720-275-1350"
-              className="bg-white text-primary px-8 py-3 rounded-lg font-bold tracking-wider hover:bg-white/90 transition-colors duration-200"
-            >
-              720-275-1350
-            </a>
-            <a
-              href="mailto:stuart.paul@nrvana.com"
-              className="border border-white/30 text-white px-8 py-3 rounded-lg tracking-wider hover:bg-white/10 transition-colors duration-200"
-            >
-              stuart.paul@nrvana.com
-            </a>
           </div>
         </div>
       </section>
