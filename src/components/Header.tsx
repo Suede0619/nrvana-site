@@ -55,7 +55,7 @@ export default function Header() {
           </nav>
 
           {/* Contact icons */}
-          <div className="hidden md:flex items-center gap-4 text-white/80">
+          <div className="hidden md:flex items-baseline gap-4 text-white/80">
             <a href="tel:720-275-1350" className="text-sm font-bold hover:text-white transition-colors duration-200">
               720-275-1350
             </a>
