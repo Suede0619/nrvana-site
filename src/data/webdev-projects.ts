@@ -69,7 +69,6 @@ export const webdevProjects: Project[] = [
     description:
       "Wore many hats in the creation and development of a half dozen start-up businesses in the web, mobile and augmented reality space. Designed usable, intentional interfaces, wrote code, and coordinated a team of developers.",
     images: [
-      "/images/projects/streamline/streamline.png",
       "/images/projects/streamline/0000_Screen-Shot-2016-06-30-at-12.37.45-PM.png.png",
       "/images/projects/streamline/0001_Screen-Shot-2016-06-30-at-12.37.59-PM.png.png",
       "/images/projects/streamline/0002_Screen-Shot-2016-06-30-at-12.38.06-PM.png.png",
@@ -86,7 +85,6 @@ export const webdevProjects: Project[] = [
     description:
       "Worked with a Java development team to build the Clear Choice Asset Allocation tool. Questions animate across the screen, resulting data delivers a pie-chart result, email address is accepted, pdf pie chart is delivered. Performed all front end development in Bootstrap and jQuery.",
     images: [
-      "/images/projects/asset-allocation/clearchoicelogo1.png",
       "/images/projects/asset-allocation/_0006_Screen-Shot-2016-06-24-at-1.21.17-PM.png.jpg",
       "/images/projects/asset-allocation/_0007_Screen-Shot-2016-06-24-at-1.21.28-PM.png.jpg",
       "/images/projects/asset-allocation/_0008_Screen-Shot-2016-06-24-at-1.21.33-PM.png.jpg",
@@ -126,7 +124,6 @@ export const webdevProjects: Project[] = [
     description:
       "Logo design and an html website creates a world for health education messages.",
     images: [
-      "/images/projects/mens-health/men4life.jpg",
       "/images/projects/mens-health/men4life1.jpg",
       "/images/projects/mens-health/men4life2.jpg",
       "/images/projects/mens-health/men4life3.jpg",
