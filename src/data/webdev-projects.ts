@@ -70,10 +70,13 @@ export const webdevProjects: Project[] = [
       "Wore many hats in the creation and development of a half dozen start-up businesses in the web, mobile and augmented reality space. Designed usable, intentional interfaces, wrote code, and coordinated a team of developers.",
     images: [
       "/images/projects/streamline/streamline.png",
-      "/images/projects/streamline/0000__0000_v3.jpg.jpg.jpg",
-      "/images/projects/streamline/0001__0001_v3a.jpg.jpg.jpg",
-      "/images/projects/streamline/0002__0002_v3b.jpg.jpg.jpg",
-      "/images/projects/streamline/0003__0003_v3c.jpg.jpg.jpg",
+      "/images/projects/streamline/0000_Screen-Shot-2016-06-30-at-12.37.45-PM.png.png",
+      "/images/projects/streamline/0001_Screen-Shot-2016-06-30-at-12.37.59-PM.png.png",
+      "/images/projects/streamline/0002_Screen-Shot-2016-06-30-at-12.38.06-PM.png.png",
+      "/images/projects/streamline/0002_Aluminaid_Home.jpg.png",
+      "/images/projects/streamline/0003_Aluminaid_products.jpg.png",
+      "/images/projects/streamline/0004_Hotspotting_homepage_v03_sponsored.jpg.png",
+      "/images/projects/streamline/0005_Hotspotting_homepage_v04.jpg.png",
     ],
   },
   {
@@ -83,9 +86,12 @@ export const webdevProjects: Project[] = [
     description:
       "Worked with a Java development team to build the Clear Choice Asset Allocation tool. Questions animate across the screen, resulting data delivers a pie-chart result, email address is accepted, pdf pie chart is delivered. Performed all front end development in Bootstrap and jQuery.",
     images: [
-      "/images/projects/asset-allocation/0000_Screen-Shot-2016-06-30-at-12.37.45-PM.png.png",
-      "/images/projects/asset-allocation/0001_Screen-Shot-2016-06-30-at-12.37.59-PM.png.png",
-      "/images/projects/asset-allocation/0002_Screen-Shot-2016-06-30-at-12.38.06-PM.png.png",
+      "/images/projects/asset-allocation/clearchoicelogo1.png",
+      "/images/projects/asset-allocation/_0006_Screen-Shot-2016-06-24-at-1.21.17-PM.png.jpg",
+      "/images/projects/asset-allocation/_0007_Screen-Shot-2016-06-24-at-1.21.28-PM.png.jpg",
+      "/images/projects/asset-allocation/_0008_Screen-Shot-2016-06-24-at-1.21.33-PM.png.jpg",
+      "/images/projects/asset-allocation/_0009_Screen-Shot-2016-06-24-at-1.22.14-PM.png.jpg",
+      "/images/projects/asset-allocation/_0010_Screen-Shot-2016-06-24-at-1.23.42-PM.png.jpg",
     ],
   },
   {
@@ -95,11 +101,9 @@ export const webdevProjects: Project[] = [
     description:
       "Built a responsive website using Twitter Bootstrap\u2014used the Ingress augmented-reality game brand and imagery to generate a world of intrigue, and create a buzz to sell these custom touchscreen friendly gloves.",
     images: [
-      "/images/projects/bootstrap/0000_Screen-Shot-2015-05-15-at-12.02.41-AM.png.jpg",
-      "/images/projects/bootstrap/0001_Screen-Shot-2015-05-15-at-12.02.53-AM.png.jpg",
-      "/images/projects/bootstrap/0002_Screen-Shot-2015-05-15-at-12.03.11-AM.png.jpg",
-      "/images/projects/bootstrap/0003_Screen-Shot-2015-05-15-at-12.03.22-AM.png.jpg",
-      "/images/projects/bootstrap/0004_Screen-Shot-2015-05-15-at-12.03.42-AM.png.jpg",
+      "/images/projects/bootstrap/_0000_Screen-Shot-2016-06-04-at-3.24.26-PM.png.jpg",
+      "/images/projects/bootstrap/_0001_Layer-1-copy.jpg",
+      "/images/projects/bootstrap/_0002_Screen-Shot-2016-06-04-at-3.24.50-PM.png.jpg",
     ],
   },
   {
@@ -122,9 +126,10 @@ export const webdevProjects: Project[] = [
     description:
       "Logo design and an html website creates a world for health education messages.",
     images: [
-      "/images/projects/mens-health/0004_Hotspotting_homepage_v03_sponsored.jpg.png",
-      "/images/projects/mens-health/0002_Aluminaid_Home.jpg.png",
-      "/images/projects/mens-health/0003_Aluminaid_products.jpg.png",
+      "/images/projects/mens-health/men4life.jpg",
+      "/images/projects/mens-health/men4life1.jpg",
+      "/images/projects/mens-health/men4life2.jpg",
+      "/images/projects/mens-health/men4life3.jpg",
     ],
   },
 ];
